@@ -1,0 +1,176 @@
+<html lang="pt-BR"><head>
+<meta charset="UTF-8">
+<title>Logo Cinematográfico</title>
+
+<style>
+
+body{
+margin:0;
+background:black;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+overflow:hidden;
+}
+
+/* container principal */
+
+.container{
+position:relative;
+width:600px;
+height:300px;
+animation:intro 2.5s ease-out;
+}
+
+/* energia girando */
+
+.energia{
+position:absolute;
+width:600px;
+height:300px;
+border-radius:50%;
+background:radial-gradient(circle, rgba(0,200,255,0.9), transparent 70%);
+filter:blur(35px);
+animation:energia 6s linear infinite;
+}
+
+/* olho */
+
+.olho{
+position:absolute;
+width:100%;
+z-index:3;
+}
+
+/* América do Sul */
+
+.america{
+position:absolute;
+width:120px;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+animation:girar 6s linear infinite;
+z-index:2;
+}
+
+/* piscar */
+
+.palpebra{
+position:absolute;
+width:100%;
+height:100%;
+background:black;
+top:-100%;
+z-index:5;
+animation:piscar 7s infinite;
+}
+
+/* partículas */
+
+.particula{
+position:absolute;
+width:4px;
+height:4px;
+background:white;
+border-radius:50%;
+opacity:0.9;
+animation:subir 4s linear infinite;
+}
+
+/* animações */
+
+@keyframes intro{
+0%{
+transform:scale(0.2);
+opacity:0;
+}
+100%{
+transform:scale(1);
+opacity:1;
+}
+}
+
+@keyframes girar{
+from{
+transform:translate(-50%,-50%) rotate(0deg);
+}
+to{
+transform:translate(-50%,-50%) rotate(360deg);
+}
+}
+
+@keyframes energia{
+from{transform:rotate(0deg)}
+to{transform:rotate(360deg)}
+}
+
+@keyframes piscar{
+
+0%{top:-100%}
+85%{top:-100%}
+
+88%{top:0}
+
+92%{top:-100%}
+
+100%{top:-100%}
+
+}
+
+@keyframes subir{
+
+0%{
+transform:translateY(0);
+opacity:1;
+}
+
+100%{
+transform:translateY(-300px);
+opacity:0;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+
+
+
+
+<img src="olho.png" class="olho">
+
+<div class="palpebra"></div>
+
+</div>
+
+<script>
+
+/* gerar partículas de energia */
+
+for(let i=0;i<60;i++){
+
+let p=document.createElement("div")
+
+p.className="particula"
+
+p.style.left=Math.random()*window.innerWidth+"px"
+p.style.top=Math.random()*window.innerHeight+"px"
+
+p.style.animationDuration=(2+Math.random()*3)+"s"
+
+document.body.appendChild(p)
+
+}
+
+</script><div class="particula" style="left: 34.5896px; top: 3.10057px; animation-duration: 4.39695s;"></div><div class="particula" style="left: 847.442px; top: 419.392px; animation-duration: 2.23536s;"></div><div class="particula" style="left: 860.186px; top: 14.1285px; animation-duration: 4.62499s;"></div><div class="particula" style="left: 382.135px; top: 65.9134px; animation-duration: 2.68896s;"></div><div class="particula" style="left: 6.21267px; top: 69.5956px; animation-duration: 2.46772s;"></div><div class="particula" style="left: 551.027px; top: 497.904px; animation-duration: 3.15522s;"></div><div class="particula" style="left: 971.213px; top: 484.735px; animation-duration: 4.45333s;"></div><div class="particula" style="left: 410.107px; top: 355.785px; animation-duration: 2.33911s;"></div><div class="particula" style="left: 224.842px; top: 145.632px; animation-duration: 3.09749s;"></div><div class="particula" style="left: 606.715px; top: 314.41px; animation-duration: 4.02699s;"></div><div class="particula" style="left: 156.373px; top: 270.905px; animation-duration: 2.25574s;"></div><div class="particula" style="left: 662.958px; top: 273.208px; animation-duration: 3.42231s;"></div><div class="particula" style="left: 362.928px; top: 499.832px; animation-duration: 4.63595s;"></div><div class="particula" style="left: 743.058px; top: 480.014px; animation-duration: 3.10047s;"></div><div class="particula" style="left: 121.02px; top: 257.629px; animation-duration: 2.68165s;"></div><div class="particula" style="left: 885.998px; top: 290.68px; animation-duration: 2.75819s;"></div><div class="particula" style="left: 604.627px; top: 138.607px; animation-duration: 2.50179s;"></div><div class="particula" style="left: 425.11px; top: 366.212px; animation-duration: 3.51006s;"></div><div class="particula" style="left: 334.309px; top: 188.585px; animation-duration: 4.97086s;"></div><div class="particula" style="left: 133.428px; top: 140.983px; animation-duration: 4.82208s;"></div><div class="particula" style="left: 617.184px; top: 451.597px; animation-duration: 2.53067s;"></div><div class="particula" style="left: 895.896px; top: 423.338px; animation-duration: 2.50834s;"></div><div class="particula" style="left: 842.466px; top: 307.823px; animation-duration: 3.06759s;"></div><div class="particula" style="left: 66.253px; top: 131.624px; animation-duration: 2.66363s;"></div><div class="particula" style="left: 574.888px; top: 473.679px; animation-duration: 3.13833s;"></div><div class="particula" style="left: 549.487px; top: 396.913px; animation-duration: 4.24899s;"></div><div class="particula" style="left: 1043.76px; top: 351.028px; animation-duration: 3.72136s;"></div><div class="particula" style="left: 227.594px; top: 317.382px; animation-duration: 4.01573s;"></div><div class="particula" style="left: 432.514px; top: 296.328px; animation-duration: 4.74701s;"></div><div class="particula" style="left: 467.393px; top: 483.474px; animation-duration: 3.1242s;"></div><div class="particula" style="left: 882.132px; top: 4.81778px; animation-duration: 2.0084s;"></div><div class="particula" style="left: 789.685px; top: 99.5296px; animation-duration: 3.21582s;"></div><div class="particula" style="left: 697.984px; top: 133.611px; animation-duration: 3.32932s;"></div><div class="particula" style="left: 764.281px; top: 453.532px; animation-duration: 3.74643s;"></div><div class="particula" style="left: 625.257px; top: 472.452px; animation-duration: 4.84926s;"></div><div class="particula" style="left: 388.929px; top: 139.578px; animation-duration: 4.65594s;"></div><div class="particula" style="left: 80.527px; top: 88.0326px; animation-duration: 4.48939s;"></div><div class="particula" style="left: 907.556px; top: 115.541px; animation-duration: 3.80563s;"></div><div class="particula" style="left: 382.719px; top: 463.202px; animation-duration: 4.15668s;"></div><div class="particula" style="left: 425.328px; top: 150.669px; animation-duration: 4.31554s;"></div><div class="particula" style="left: 918.123px; top: 282.274px; animation-duration: 2.19524s;"></div><div class="particula" style="left: 682.107px; top: 496.397px; animation-duration: 2.13501s;"></div><div class="particula" style="left: 978.421px; top: 496.917px; animation-duration: 3.33531s;"></div><div class="particula" style="left: 232.213px; top: 488.215px; animation-duration: 4.27869s;"></div><div class="particula" style="left: 254.471px; top: 61.5606px; animation-duration: 3.66362s;"></div><div class="particula" style="left: 58.0763px; top: 78.1308px; animation-duration: 3.81775s;"></div><div class="particula" style="left: 490.094px; top: 318.831px; animation-duration: 3.55329s;"></div><div class="particula" style="left: 961.366px; top: 400.559px; animation-duration: 2.10307s;"></div><div class="particula" style="left: 407.61px; top: 365.37px; animation-duration: 3.46696s;"></div><div class="particula" style="left: 932.677px; top: 283.968px; animation-duration: 2.76858s;"></div><div class="particula" style="left: 423.064px; top: 337.884px; animation-duration: 3.78398s;"></div><div class="particula" style="left: 636.835px; top: 25.7986px; animation-duration: 2.50737s;"></div><div class="particula" style="left: 717.209px; top: 133.263px; animation-duration: 2.81196s;"></div><div class="particula" style="left: 890.746px; top: 172.961px; animation-duration: 4.51836s;"></div><div class="particula" style="left: 39.8538px; top: 311.878px; animation-duration: 4.03186s;"></div><div class="particula" style="left: 546.99px; top: 395.773px; animation-duration: 2.86042s;"></div><div class="particula" style="left: 641.52px; top: 275.69px; animation-duration: 4.16s;"></div><div class="particula" style="left: 565.543px; top: 173.61px; animation-duration: 4.87783s;"></div><div class="particula" style="left: 462.912px; top: 493.072px; animation-duration: 3.19526s;"></div><div class="particula" style="left: 593.872px; top: 141.011px; animation-duration: 3.66113s;"></div>
+
+
+</body>
+</html>
